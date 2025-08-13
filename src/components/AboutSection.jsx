@@ -7,7 +7,7 @@ const AboutSection = () => {
                 About Us
             </h2>
             <p className="text-base sm:text-lg lg:text-[1.1rem] text-textMedium max-w-6xl mx-auto leading-relaxed">
-                BrainFog Agency is a dynamic technology company committed to revolutionizing industries through innovation in data science, AI-driven solutions, and marketing strategies. Headquartered Mumbai, India, we’re at the heart of a thriving tech ecosystem. Our collaboration hub at DIFC – Dubai AI Campus ensures a global perspective, connecting our teams across borders. We’re passionate about solving complex challenges—whether it’s optimizing workflows with AI or crafting hyper-personalized campaigns. Join us in pushing the boundaries of what’s possible.
+                BrainFog Agency is a dynamic technology company committed to revolutionizing industries through innovation in data science, AI-driven solutions, and marketing strategies. Headquartered in Mumbai, India, we’re at the heart of a thriving tech ecosystem. Our collaboration hub at the DIFC – Dubai AI Campus ensures a global perspective, connecting our teams across borders. We’re passionate about solving complex challenges—whether it’s optimizing workflows with AI or crafting hyper-personalized campaigns. Join us in pushing the boundaries of what’s possible.
             </p>
         </div>
     );
