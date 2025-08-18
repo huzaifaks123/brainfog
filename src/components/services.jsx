@@ -83,7 +83,7 @@ const Services = () => {
           What We Do
         </h2>
         <p className="text-base sm:text-lg lg:text-[1.1rem] text-textMedium max-w-6xl mx-auto leading-relaxed text-center pb-32">
-          At BrainFog Agency, we empower businesses to stay ahead in a rapidly evolving digital landscape by blending advanced technology with strategic insights. Our multidisciplinary team operates at the intersection of AI, marketing, and operational excellence, delivering transformative outcomes across industries. From startups to global enterprises, we deliver solutions that drive growth, efficiency, and impact. Here’s how we make an impact
+          At BrainFog Agency, we empower businesses to stay ahead in a rapidly evolving digital landscape by blending advanced technology with strategic insights. Our multidisciplinary team operates at the intersection of AI, marketing, and operational excellence, delivering transformative outcomes across industries. Here’s how we make an impact :<br /><strong>From startups to global enterprises, we deliver solutions that drive growth, efficiency, and impact.</strong>
         </p>
         <div className="max-w-6xl mx-auto">
           {servicesData.map((service, index) => (

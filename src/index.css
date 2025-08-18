@@ -56,7 +56,12 @@ body {
   scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
 }
 
-
+@media (hover: hover) and (pointer: fine) {
+  .why-us-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+}
 
 /* Hero visuals animation */
 @keyframes float {

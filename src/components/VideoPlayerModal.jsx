@@ -33,6 +33,34 @@ const VideoPlayerModal = ({ item, allItems }) => {
         lastTouch.current = now;
     };
 
+    const getSecondsFromHHMMSS = (hhmmss) => {
+        if (!hhmmss) return 0;
+        const parts = hhmmss.split(":").map(Number);
+        return parts.reduce((acc, time) => 60 * acc + time, 0);
+    };
+
+    const thumbTime = getSecondsFromHHMMSS(item.thumbnail);
+
+    const handleHoverStart = () => {
+        const video = hoverRef.current;
+        if (video) {
+            video.currentTime = thumbTime;
+            video.play();
+            setTimeout(() => {
+                video.pause();
+                video.currentTime = thumbTime; // reset to thumbnail
+            }, 5000);
+        }
+    };
+
+    const handleHoverEnd = () => {
+        const video = hoverRef.current;
+        if (video) {
+            video.pause();
+            video.currentTime = thumbTime; // always reset to thumbnail frame
+        }
+    };
+
 
     const openModal = (src) => {
         setSelectedMedia(src);
@@ -80,16 +108,27 @@ const VideoPlayerModal = ({ item, allItems }) => {
                         onError={() => setThumbLoaded(false)}
                     />
                 )} */}
+
                 {isVideo(item.image) && item.image ? (
                     <video
-                        ref={hoverRef}
+                        ref={(el) => {
+                            hoverRef.current = el;
+                            if (el) {
+                                el.addEventListener("loadedmetadata", () => {
+                                    el.currentTime = thumbTime;
+                                });
+                            }
+                        }}
                         src={item.image}
                         muted
                         preload="metadata"
-                        className="rounded-md shadow-md w-full h-64 object-cover"
+                        className={`rounded-md shadow-md w-full h-64 object-${item.position && item.position} object-cover`}
                         onLoadedData={() => setThumbLoaded(true)}
-                        onError={() => setThumbLoaded(false)} // <- stops spinner if video fails
-
+                        onError={() => setThumbLoaded(false)}
+                        onMouseEnter={handleHoverStart}
+                        onMouseLeave={handleHoverEnd}
+                        onTouchStart={handleHoverStart}
+                        onTouchEnd={handleHoverEnd}
                     />
                 ) : (
                     <img
@@ -97,11 +136,9 @@ const VideoPlayerModal = ({ item, allItems }) => {
                         alt={item.title}
                         className="rounded-md shadow-md w-full h-64 object-cover"
                         onLoad={() => setThumbLoaded(true)}
-                        onError={() => setThumbLoaded(false)} // <- stops spinner if video fails
-
+                        onError={() => setThumbLoaded(false)}
                     />
                 )}
-
 
                 <div className="absolute inset-0 rounded-md py-2 bg-black/30 flex flex-col items-center justify-between text-white text-md font-semibold opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-xl">{item.title}</span>

@@ -7,26 +7,31 @@
   {
     "title": "Butter Chicken Ads",
     "image": "/portfolio/AI/AIGeneratedVideos/butter_chicken.mp4",
+    "thumbnail": "00:00:32",
     "tag": "AI Generated Product Ads"
   },
   {
     "title": "Actors Doing Normal Work",
     "image": "/portfolio/AI/AIGeneratedVideos/actors_doing_normal_work.mp4",
+    "position":"top",
     "tag": "AI Generated Videos"
   },
   {
     "title": "Celebrities in Real Life",
     "image": "/portfolio/AI/AIGeneratedVideos/celebrities_in_real_life.mp4",
+    "position":"top",
     "tag": "AI Generated Videos"
   },
   {
     "title": "Doremon Animation",
     "image": "/portfolio/AI/AIGeneratedVideos/doremon.mp4",
+    "thumbnail": "00:00:07",
     "tag": "AI Generated Videos"
   },
   {
     "title": "Fruits X Animals - 1",
     "image": "/portfolio/AI/AIGeneratedVideos/fruits_x_animals_1.mp4",
+    "position":"top",
     "tag": "AI Generated Videos"
   },
   {
@@ -67,11 +72,13 @@
   {
     "title": "Nuqi Blox Logo Splash Screen",
     "image": "/portfolio/2D/SplashScreen/nuqi_blox_logo_splash_screen.mp4",
+    "thumbnail": "00:00:04",
     "tag": "Splash Screen"
   },
   {
     "title": "NuqiGold Logo Splash Screen",
     "image": "/portfolio/2D/SplashScreen/nuqi_gold_logo_splash_screen.mp4",
+    "thumbnail": "00:00:04",
     "tag": "Splash Screen"
   },
   {
@@ -82,6 +89,7 @@
   {
     "title": "Ball Animation",
     "image": "/portfolio/3D/3DAnimation/ball_animation.mp4",
+    "thumbnail": "00:00:01",
     "tag": "3D Animation"
   },
   {
@@ -102,26 +110,31 @@
   {
     "title": "3D Image Based Lighting",
     "image": "/portfolio/3D/3DLighting/3d_image_based_lighting.mp4",
+    "thumbnail": "00:00:01",
     "tag": "3D Lighting"
   },
   {
     "title": "3D Interior Lighting (2)",
     "image": "/portfolio/3D/3DLighting/3d_interior_lighting_2.mp4",
+    "thumbnail": "00:00:01",
     "tag": "3D Lighting"
   },
   {
     "title": "3D Interior Lighting",
     "image": "/portfolio/3D/3DLighting/3d_interior_lighting.mp4",
+    "thumbnail": "00:00:02",
     "tag": "3D Lighting"
   },
   {
     "title": "3D Mood Lighting",
     "image": "/portfolio/3D/3DLighting/3d_mood_lighting.mp4",
+    "thumbnail": "00:00:02",
     "tag": "3D Lighting"
   },
   {
     "title": "3D Three Point Lighting",
     "image": "/portfolio/3D/3DLighting/3d_three_point_lighting.mp4",
+    "thumbnail": "00:00:02",
     "tag": "3D Lighting"
   },
   {
@@ -197,86 +210,97 @@
   {
     "title": "Astra Brand Identity",
     "image": "/portfolio/GD/Brandbook/astra_brand_identity.mp4",
+    "thumbnail": "00:00:39",
     "tag": "Brandbook"
   },
   {
     "title": "BrainFog Brand Identity",
     "image": "/portfolio/GD/Brandbook/brainfog_brand_identity.mp4",
+    "thumbnail": "00:00:40",
     "tag": "Brandbook"
   },
   {
     "title": "BrainFog Energy Drink Packshot",
     "image": "/portfolio/Others/ProductPackShots/brainfog_energy_drink_packshot.mp4",
+    "thumbnail": "00:00:12",
     "tag": "Product PackShots"
   },
   {
     "title": "Dasagriva 3D Short Film",
     "image": "/portfolio/Others/ShortFilm/dasagriva_3d_short_film.mp4",
+    "thumbnail": "00:00:11",
     "tag": "Short Film"
-  },
-  {
-    "title": "Balloon (Ncloth) Simulation",
-    "image": "/portfolio/Others/VFXCGI/balloon_ncloth.mp4",
-    "tag": "VFX CGI"
   },
   {
     "title": "Cloth Reveal Animation",
     "image": "/portfolio/Others/VFXCGI/cloth_reveal.mp4",
+    "thumbnail": "00:00:09",
     "tag": "VFX CGI"
   },
   {
     "title": "Donut Simulation",
     "image": "/portfolio/Others/VFXCGI/donut_simulation.mp4",
+    "thumbnail": "00:00:09",
     "tag": "VFX CGI"
   },
   {
     "title": "Dubai Frame Animation",
     "image": "/portfolio/Others/VFXCGI/dubai_frame.mp4",
+    "thumbnail": "00:00:11",
     "tag": "VFX CGI"
   },
   {
     "title": "FX Wall Animation",
     "image": "/portfolio/Others/VFXCGI/fx_wall_animation.mp4",
+    "thumbnail": "00:00:01",
     "tag": "VFX CGI"
   },
   {
     "title": "Nuqi Gold Banner Animation",
     "image": "/portfolio/Others/VFXCGI/nuqi_gold_banner.mp4",
+    "thumbnail": "00:00:12",
     "tag": "VFX CGI"
   },
   {
     "title": "Logo Animation 1",
     "image": "/portfolio/VE/LogoAnimation/logo_animation_1.mp4",
+    "thumbnail": "00:00:07",
     "tag": "Logo Animation"
   },
   {
     "title": "Amazon Logo Animation",
     "image": "/portfolio/VE/LogoAnimation/amazon_logo_animation.mp4",
+    "thumbnail": "00:00:03",
     "tag": "Logo Animation"
   },
   {
     "title": "Bisleri Logo Animation",
     "image": "/portfolio/VE/LogoAnimation/bisleri_logo_animation.mp4",
+    "thumbnail": "00:00:03",
     "tag": "Logo Animation"
   },
   {
     "title": "Pogo Logo Animation",
     "image": "/portfolio/VE/LogoAnimation/pogo_logo_animation.mp4",
+    "thumbnail": "00:00:07",
     "tag": "Logo Animation"
   },
   {
     "title": "YT Gaming Logo Animation",
     "image": "/portfolio/VE/LogoAnimation/yt_gaming_logo_animation.mp4",
+    "thumbnail": "00:00:02",
     "tag": "Logo Animation"
   },
   {
     "title": "Freepik Brand Motion Graphics",
     "image": "/portfolio/VE/MotionGraphics/freepik_brand_motion_graphics.mp4",
+    "thumbnail": "00:00:01",
     "tag": "Motion Graphics"
   },
   {
     "title": "NuqiGold Walkthrough",
     "image": "/portfolio/VE/MotionGraphics/nuqigold_walkthrough.mp4",
+    "thumbnail": "00:00:39",
     "tag": "Motion Graphics"
   }
 ]
