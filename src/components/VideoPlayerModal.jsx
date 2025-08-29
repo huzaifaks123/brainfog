@@ -61,7 +61,6 @@ const VideoPlayerModal = ({ item, allItems }) => {
         }
     };
 
-
     const openModal = (src) => {
         setSelectedMedia(src);
         setModalLoaded(false);
@@ -71,6 +70,22 @@ const VideoPlayerModal = ({ item, allItems }) => {
     const handleSuggestionClick = (src) => {
         setSelectedMedia(src);
         setModalLoaded(false);
+    };
+
+    // ✅ Safe mapping for object position (prevents Tailwind purge issues)
+    const getObjectPositionClass = (pos) => {
+        switch (pos) {
+            case "top":
+                return "object-top";
+            case "bottom":
+                return "object-bottom";
+            case "left":
+                return "object-left";
+            case "right":
+                return "object-right";
+            default:
+                return "object-center";
+        }
     };
 
     return (
@@ -89,26 +104,6 @@ const VideoPlayerModal = ({ item, allItems }) => {
                     </div>
                 )}
 
-                {/* {isVideo(item.image) && item.image ? (
-                    <video
-                        ref={hoverRef}
-                        src={item.image}
-                        muted
-                        preload="metadata"
-                        className="rounded-md shadow-md w-full h-64 object-cover"
-                        onLoadedData={() => setThumbLoaded(false)}
-                        onError={() => setThumbLoaded(false)} // <- stops spinner if video fails
-                    />
-                ) : (
-                    <img
-                        src={item.image}
-                        alt={item.title}
-                        className="rounded-md shadow-md w-full h-64 object-cover"
-                        onLoad={() => setThumbLoaded(false)}
-                        onError={() => setThumbLoaded(false)}
-                    />
-                )} */}
-
                 {isVideo(item.image) && item.image ? (
                     <video
                         ref={(el) => {
@@ -122,7 +117,7 @@ const VideoPlayerModal = ({ item, allItems }) => {
                         src={item.image}
                         muted
                         preload="metadata"
-                        className={`rounded-md shadow-md w-full h-64 object-${item.position && item.position} object-cover`}
+                        className={`rounded-md shadow-md w-full h-64 object-cover ${getObjectPositionClass(item.position)}`}
                         onLoadedData={() => setThumbLoaded(true)}
                         onError={() => setThumbLoaded(false)}
                         onMouseEnter={handleHoverStart}
@@ -134,7 +129,7 @@ const VideoPlayerModal = ({ item, allItems }) => {
                     <img
                         src={item.image}
                         alt={item.title}
-                        className="rounded-md shadow-md w-full h-64 object-cover"
+                        className={`rounded-md shadow-md w-full h-64 object-cover ${getObjectPositionClass(item.position)}`}
                         onLoad={() => setThumbLoaded(true)}
                         onError={() => setThumbLoaded(false)}
                     />

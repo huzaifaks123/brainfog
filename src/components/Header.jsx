@@ -83,13 +83,15 @@ const Header = () => {
                             { label: 'Services', href: '/#services' },
                             { label: 'Portfolio', href: '/ourportfolio' },
                             { label: 'Blogs', href: '/blog' },
-                            { label: 'Join Us', href: '/join-us' },
+                            { label: 'Join Us', href: 'https://careers.brainfogagency.com/' },
                             { label: 'Contact Us', href: '/contact', isButton: true },
                         ].map(({ label, href, isButton }) => (
                             <li key={label}>
                                 {isButton ? (
                                     <a
                                         href={href}
+                                        target={label !== "Join Us" ? '_self' : '_blank'}
+                                        rel={isButton ? undefined : 'noopener noreferrer'}
                                         className="bg-hero-text text-hero-bg py-2.5 px-6 rounded-full font-bold text-sm transition-all duration-300 ease-in-out hover:bg-hero-accent-orange hover:text-hero-text inline-block"
                                         onClick={handleNavClick}
                                     >
@@ -98,6 +100,7 @@ const Header = () => {
                                 ) : (
                                     <a
                                         href={href}
+                                        target={label !== "Join Us" ? '_self' : '_blank'}
                                         className="text-hero-text transition-all duration-300 ease-in-out hover:text-hero-accent-orange relative inline-block group py-2"
                                         onClick={handleNavClick}
                                     >
